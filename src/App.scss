@@ -1,0 +1,86 @@
+@import "~bootstrap/scss/bootstrap";
+.app-logo{
+    width: 100px;
+    height: auto;
+}
+.app-logo-title{
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    padding-left: 20px;
+    font-weight: bold;
+    font-size: 40px;
+}
+.main{
+    min-height: 500px;
+}
+.filter-bar{
+    border: 1px solid black;
+    padding: 10px;
+}
+.fitler-item{
+    border: 1px solid #a4a0a0;
+    background: white;
+    padding: 10px;
+    font-weight: bold;
+    min-width: 150px;
+    @extend .me-2;
+}
+.ml-1{
+    margin-left: 1em;
+}
+.fiter-item-container{
+    display: inline-block;
+}
+
+.filter-option-panel{
+    width: 200px;
+    min-height: 200px;
+    &.remove-height{
+        min-height: auto;
+    }
+}
+.fitler-item-selected{
+    border: 1px solid red;
+}
+.filter-option{
+    border: 1px solid #a4a0a0;
+    background: white;
+
+    &.selected{
+        border: 1px solid red;
+    }
+}
+.clearfix{
+    clear: both;
+}
+.applied-filter-item{
+    min-width: 150px;
+    display: inline-block;
+    border: 1px solid #a4a0a0;
+    padding: 10px;
+    margin: 1em 1em 0.5em 0;
+
+    .remove-item{
+        border: 1px solid #dddbdb;
+        border-radius: 50%;
+        font-size: 13px;
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        font-weight: bold;
+    }
+}
+.hide{
+    display: none;
+}
+
+@media (min-width: 400px) and (max-width: 600px){
+    .popover{
+        max-width: 100%;
+        width: 90%;
+    }
+    .filter-option-panel{
+        width: 100%;
+    }
+}
